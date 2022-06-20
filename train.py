@@ -4,6 +4,7 @@ from utils import *
 import pickle
 from gym.envs.registration import register
 
+# Note: that I had to add this is
 register(
     id='CommonsGame_v0',
     entry_point=r'CommonsGame.envs:CommonsGame',
@@ -11,8 +12,6 @@ register(
 
 numAgents = 2
 agentViewRadius = 5
-
-
 
 smallMap = [
     list('                     '),
@@ -48,10 +47,13 @@ loadModel = False
 
 
 def main():
+    print("Entering main")
     if loadModel:
+        print("loading model")
         trainer = PPOMultiAgentTrainer(env, modelPath=logPath)
         trainer.test(maxEpisodeLength)
     else:
+        print("creating and training model")
         trainer = PPOMultiAgentTrainer(env, neuralNetSpecs=archSpecs, learningRate=0.002)
         trainer.train(maxEpisodes, maxEpisodeLength, logPeriod, savePeriod, logPath)
 
