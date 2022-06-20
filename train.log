@@ -1,0 +1,31 @@
+Here is a log form running train.py for not very long. I should probably:
+1. Port this code over to Colab
+2. Make sure it runs on a GPU
+
+
+(base) (venv) C:\Users\timf3\PycharmProjects\CommonsGame>python examp.py
+
+C:\Users\timf3\anaconda3\lib\site-packages\pycolab\ascii_art.py:318: FutureWarning: arrays to stack must be passed as a "sequence" type such as list or tupl
+e. Support for non-sequence iterables such as generators is deprecated as of NumPy 1.16 and will raise an error in the future.
+  art = np.vstack(np.fromstring(line, dtype=np.uint8) for line in art)
+Episode 20       avg length: 999         reward: [75.55 74.75]
+Episode 40       avg length: 999         reward: [72.25 78.25]
+Episode 60       avg length: 999         reward: [71.45 70.2 ]
+Episode 80       avg length: 999         reward: [70.55 81.6 ]
+
+
+Here is a more recent log - it saves every 100 episodes
+
+C:\Users\timf3\anaconda3\lib\site-packages\pycolab\ascii_art.py:318: FutureWarning: arrays to stack must be passed as a "sequence" type such as list or tuple. Suppor
+C:\Users\timf3\anaconda3\lib\site-packages\pycolab\ascii_art.py:318: FutureWarning: arrays to stack must be passed as a "sequence" type such as list or tuple. Suppor
+t for non-sequence iterables such as generators is deprecated as of NumPy 1.16 and will raise an error in the future.
+  art = np.vstack(np.fromstring(line, dtype=np.uint8) for line in art)
+Episode 20       avg length: 999         reward: [57.05 76.2 ]
+Episode 40       avg length: 999         reward: [55.7  68.95]
+Episode 60       avg length: 999         reward: [59.75 74.25]
+Episode 80       avg length: 999         reward: [52.55 71.7 ]
+Episode 100      avg length: 999         reward: [53.95 73.9 ]
+Saved model
+Episode 120      avg length: 999         reward: [52.05 70.9 ]
+Episode 140      avg length: 999         reward: [55.45 72.35]
+
