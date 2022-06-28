@@ -1,6 +1,12 @@
+### Newest update
+
+I'm not sure which environment I was even using for running this! And its taking me a minute to see which one now! 
+Label what environment I am using and everything esle I need to get stuff going 
+
+
 ### Update:
 
-I merged the files over from `ppo-harvest`. 
+I merged the files over from `ppo-harvest`... (did I??? Coming back to this now I can't see it)
 
 I also changed the gym `regiser` function so that its directly within the 
 scripts that run. For some reason I was getting path issues potentially, 
