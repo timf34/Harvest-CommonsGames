@@ -3,6 +3,11 @@ from models import PPOAgent
 from utils import *
 import pickle
 
+import wandb
+
+WANDB_MODE = 'online'
+WANDB_API_KEY = '83230c40e1c562f3ef56bf082e31911eaaad4ed9'
+
 
 class PPOMultiAgentTrainer:
     # def __init__(self, env, neuralNetSpecs, learningRate, modelPath=None):
@@ -35,6 +40,13 @@ class PPOMultiAgentTrainer:
 
         self.totalSteps = 0
         self.rewardsHistory = []
+
+        wandb.init(project="CommonsGamesTesting",
+                   name="TestRun",
+                   notes="Standard Config - just trying to get it running",
+                   mode=WANDB_MODE)
+
+        wandb.watch()
 
     def interact(self, observations, rnnState, training=False):
         self.totalSteps += 1
