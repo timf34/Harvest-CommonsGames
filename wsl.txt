@@ -1,0 +1,18 @@
+cloudpickle==2.1.0
+cycler==0.11.0
+fonttools==4.33.3
+gym==0.23.1
+-e git+https://github.com/timf34/Harvest-CommonsGames.git@ad45e443413546a497e33a95e66e8116db2324e0#egg=gym_commons_game
+gym-notices==0.0.7
+importlib-metadata==4.12.0
+kiwisolver==1.4.3
+matplotlib==3.5.2
+numpy==1.23.0
+packaging==21.3
+Pillow==9.1.1
+pycolab==1.2
+pyparsing==3.0.9
+python-dateutil==2.8.2
+scipy==1.8.1
+six==1.16.0
+zipp==3.8.0
