@@ -1,8 +1,14 @@
 ### Newest update
 
-I'm not sure which environment I was even using for running this! And its taking me a minute to see which one now! 
-Label what environment I am using and everything esle I need to get stuff going 
+Setting up the environment...
 
+In WSL/ Linux, run:
+
+    ```. wsl_venv/bin/activate```
+
+In Windows, run:
+
+    ```. wsl_venv/Scripts/activate```
 
 ### Update:
 
@@ -11,6 +17,9 @@ I merged the files over from `ppo-harvest`... (did I??? Coming back to this now 
 I also changed the gym `regiser` function so that its directly within the 
 scripts that run. For some reason I was getting path issues potentially, 
 I'm not too sure tbh. But its working now! 
+
+I'm not sure which environment I was even using for running this! And its taking me a minute to see which one now! 
+Label what environment I am using and everything esle I need to get stuff going 
 
 -----
 
